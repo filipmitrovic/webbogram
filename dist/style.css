@@ -94,10 +94,11 @@ header > .logo {
 main {
     display: flex;
     align-items: center;
-    background: url('assets/bg_img.svg') no-repeat center;
     background-size: cover;
     height: 90vh;
     padding: 20px 50px;
+    background: url('assets/bg_img.svg') no-repeat center;
+
 }
 
 /* card */
