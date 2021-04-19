@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgb(56, 56, 56);
+    font-family: monospace;
+}
+
+/* Logo */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+
+header > .logo {
+    width: 200px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    background: url('assets/hero-bg.svg') no-repeat center;
+    background-size: cover;
+    height: 90vh;
+    padding: 20px 50px;
+}
+
+/* card */
+
+main > section {
+    background-color: #ffffff;
+    width: 350px;
+    border-radius: 30px;
+    box-shadow:  10px 10px 30px #dddddd,
+                 -10px -10px 30px #ffffff;
+    position: relative;
+}
+
+main > section > div:first-child {
+    padding: 38px 38px;
+}
+
+main > section > div:first-child > h1 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+main > section > div:first-child > h2 {
+    font-size: 18px;
+    margin: 10px 0 50px 0;
+    font-weight: 400;
+}
+
+main > section > div:last-child {
+    display: flex;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    height: 60px;
+}
+
+/* contact */
+
+main > section > div:last-child > a:first-child > div > .contact-link {
+    color: #ffffff;
+}
+
+main > section > div:last-child > a:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(200,96,255);
+    background: -moz-linear-gradient(45deg, rgba(200,96,255,1) 27%, rgba(144,115,255,1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(200,96,255,1) 27%, rgba(144,115,255,1) 100%);
+    background: linear-gradient(45deg, rgba(200,96,255,1) 27%, rgba(144,115,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c860ff",endColorstr="#9073ff",GradientType=1);
+    width: 50%;
+    border-bottom-left-radius: 30px;
+}
+
+main > section > div:last-child > a:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(97,96,255);
+    background: -moz-linear-gradient(45deg, rgba(97,96,255,1) 27%, rgba(144,115,255,1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(97,96,255,1) 27%, rgba(144,115,255,1) 100%);
+    background: linear-gradient(45deg, rgba(97,96,255,1) 27%, rgba(144,115,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6160ff",endColorstr="#9073ff",GradientType=1);
+    width: 50%;
+    border-bottom-right-radius: 30px;
+}
+
+main > section > div:last-child > a:first-child:hover {
+    background: rgb(200,96,255);
+}
+
+main > section > div:last-child > a:last-child:hover {
+    background: rgb(97,96,255);
+}
+
+main > section > div:last-child > a:hover > div > svg {
+    transition: transform 0.2s ease-out;
+}
+
+main > section > div:last-child > a:hover > div > svg {
+    transform: scale(1.1);
+}
+
+/* media queries */
+
+@media screen and (max-width: 1150px) {
+    
+    main {
+        padding-top: 100px;
+        align-items: flex-start;
+        justify-content: center;
+        background: url('assets/imgs/Flat\ Modern\ design\ of\ wesite\ template.svg') no-repeat center bottom;
+    }
+
+    main > section {
+        width: 500px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    main > section > div:first-child > h1 {
+        font-size: 22px;
+    }
+    
+    main > section > div:first-child > h2 {
+        font-size: 17px;
+    }
+    
+    main {
+        min-height: 600px;
+        padding-top: 20px;
+        align-items: flex-start;
+        justify-content: center;
+        background: url('assets/imgs/Flat\ Modern\ design\ of\ wesite\ template.svg') no-repeat -60px 100%;
+    }
+
+    main > section > div:first-child {
+        padding: 28px 28px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+
+    main {
+        padding: 20px 30px;
+    }
+
+}
